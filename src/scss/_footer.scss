@@ -1,0 +1,33 @@
+footer{
+    background-color: #6e8c03;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+  footer .contacto{
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+
+  footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  footer a{
+    color: white;
+    text-decoration: none;
+
+  }
+
+  footer li{
+    margin-top: auto;
+  }
+
+
+

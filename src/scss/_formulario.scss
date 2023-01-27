@@ -1,0 +1,124 @@
+.formulario{
+    background-color: #afbf34;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    color: white;
+    padding: 30px;
+    margin-bottom: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+    grid-template-areas:  "zona1      zona1"
+                          "zona2      zona3"
+                          "zona4      zona5"
+                          "zona6      zona6"
+                          "zona7      zona7";
+    @media(max-width:800px){
+        width: 100%;
+        margin: 20px 0px;
+        border-radius: 0px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 60px;
+        grid-template-areas:  "zona1"       
+                              "zona2" 
+                              "zona3"       
+                              "zona4"        
+                              "zona5"       
+                              "zona6"     
+                              "zona7";      
+                    }
+                
+@for $var from 1 to 8{
+    @if($var == 1 ){
+
+        
+.zona1{
+    grid-area: zona1;
+}
+.zona2{
+    grid-area: zona2;
+}
+.zona3{
+    grid-area: zona3;
+}
+.zona4{
+    grid-area: zona4;
+}
+.zona5{
+    grid-area: zona5;
+}
+.zona6{
+    grid-area: zona6;
+}
+    }
+@else if($var == 7){
+    button:nth-child(7){
+        grid-area:zona#{$var};
+        width: 200px;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+        color:#afbf34;
+        margin-top: 20px;   
+
+}
+}
+
+}
+
+    /*
+    h2:nth-child(1){                   
+        grid-area: Título;
+    }
+    label ::nth-child(2){
+        grid-area: nameApellido;
+    }
+    label ::nth-child(3){
+        grid-area: email;
+    }
+    label ::nth-child(4){
+        grid-area: tel;
+    }
+    label ::nth-child(5){
+        grid-area: asunto;
+    }
+    label ::nth-child(6){
+        width: 100%;
+    }
+    button ::nth-child(7){
+        grid-area: button;
+        width: 200px;
+        border-radius: 5px;
+        border: none;
+        font-size: 25px;
+        color:#afbf34;
+        margin-top: 20px;
+    }
+    */
+    label{
+        display: flex;
+        flex-direction: column;
+    }
+    label input , .fomulario label textarea{
+        background-color: transparent;
+        border: 0px;
+        border-bottom: 1px solid white;
+        margin-top: 10px;
+        outline: none;
+        color: white;
+    }
+
+}
+
+
+.formulario{
+    width: 100%;
+    height: 250px;
+    margin: 20PX auto;
+    padding: 10px;
+}
+
+
+
